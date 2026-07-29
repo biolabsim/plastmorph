@@ -1,0 +1,50 @@
+[language]
+label = "Language"
+en = "English"
+de = "German"
+
+[app]
+title = "PlastMorph: Plastic Degradation Simulator"
+caption = "Explore how polymers degrade under different environmental conditions."
+
+[sidebar]
+material_component = "Plastic component"
+environment = "Environment"
+simulation_timeline = "Simulation timeline"
+environment_tinkering = "Environment variable tinkering"
+
+[controls]
+years = "Years"
+steps_per_year = "Steps per year"
+initial_mass_g = "Initial mass (g)"
+uv_exposure = "UV exposure"
+moisture = "Moisture"
+oxygen = "Oxygen"
+microbial_activity = "Microbial activity"
+mechanical_abrasion = "Mechanical abrasion"
+temperature_c = "Temperature (C)"
+
+[plots]
+mass_over_time = "Mass over time"
+morphology_over_time = "Iconographic morphology over time"
+snapshot_title = "{years:.0f} {year_unit}\n{percent:.1f}% {mass_label}"
+
+[units]
+year_short = "y"
+mass_label = "mass"
+
+[materials]
+PE = "Polyethylene"
+PVC = "Polyvinyl Chloride"
+PU = "Polyurethane"
+PP = "Polypropylene"
+PS = "Polystyrene"
+PET = "Polyethylene Terephthalate"
+PLA = "Polylactic Acid"
+
+[environments]
+temperate_forest = "Temperate forest"
+landfill = "Landfill"
+ocean = "Ocean"
+organic_composting = "Organic composting"
+desert = "Desert"

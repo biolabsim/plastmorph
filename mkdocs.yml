@@ -1,0 +1,22 @@
+site_name: PlastMorph Docs
+site_description: Educational plastic degradation simulation
+repo_name: PlastMorph
+
+theme:
+  name: material
+  palette:
+    primary: teal
+    accent: amber
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: false
+
+nav:
+  - Home: index.md
+  - Model: model.md
+  - API: api.md
