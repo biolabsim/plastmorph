@@ -1,28 +1,44 @@
-.PHONY: install dev lint test docs docs-serve run format i18n-check
+.PHONY: install dev lint test docs docs-serve run format i18n-check doctor
 
 install:
-	pip install -e .
+	python -m pip install -e .
 
 dev:
-	pip install -e ".[dev]"
+	python -m pip install -e ".[dev]"
+
+remove:
+	python -m pip uninstall -y plastmorph
 
 lint:
-	ruff check .
+	python -m ruff check .
 
 test:
-	pytest -q
+	python -m pytest -q
 
 i18n-check:
-	pytest -q tests/test_i18n.py
+	python -m pytest -q tests/test_i18n.py
 
 docs:
-	mkdocs build
+	python -m mkdocs build
 
 docs-serve:
-	mkdocs serve
+	python -m mkdocs serve
 
 run:
-	streamlit run app/streamlit_app.py
+	python -m streamlit run app/streamlit_app.py
 
 format:
-	ruff check . --fix
+	python -m ruff check . --fix
+
+doctor:
+	@echo "PWD=$$(pwd)"
+	@echo "python path: $$(command -v python || echo 'not found')"
+# 	@echo "pip path: $$(command -v pip || echo 'not found')"
+# 	@python -V || true
+# 	@python -m pip -V || true
+# 	@pip -V || true
+	@python -c "import sys; print('python executable:', sys.executable); print('sys.prefix:', sys.prefix)" || true
+# 	@python -m pip list | grep -i '^plastmorph ' || true
+	@pip list | grep -i '^plastmorph ' || true
+	@python -c "import plastmorph; print('python import: OK from', plastmorph.__file__)" || true
+	@python -m streamlit --version || true

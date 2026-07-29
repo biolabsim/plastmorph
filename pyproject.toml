@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [
-  { name = "Ulf Liebal", email = "ulf.liebal@rwth-aachen.de" }
+  { name = "Ulf Liebal", email = "ulf.liebal@rwth-aachen.de" },
   { name = "Nicole Maaßen", email = "nicole.maassen@iamb.rwth-aachen.de" }
 ]
 dependencies = [
@@ -45,10 +45,7 @@ ignore = ["D203", "D212"]
 convention = "google"
 
 [tool.hatch.build.targets.wheel]
-include = [
-  "src/plastmorph/**/*.py",
-  "src/plastmorph/locales/*.toml"
-]
+packages = ["src/plastmorph"]
 
 [tool.hatch.build.targets.sdist]
 include = [

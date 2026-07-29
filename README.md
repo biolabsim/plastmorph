@@ -24,7 +24,7 @@ Replace `<your-org>/<your-repo>` with your GitHub repository path.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-org>/<your-repo>.git
+git clone https://github.com/Biotaix/plastmorph.git
 cd <your-repo>
 ```
 
@@ -58,7 +58,7 @@ deactivate
 ### 2B. Install with conda
 
 ```bash
-conda create -n plastmorph python=3.12 -y
+conda create -n plastmorph python=3.13 -y
 conda activate plastmorph
 python -m pip install --upgrade pip
 python -m pip install -e .

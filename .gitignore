@@ -7,3 +7,4 @@ __pycache__/
 site/
 .DS_Store
 .aichat.md
+.agents/skills/developing-with-streamlit
