@@ -1,10 +1,10 @@
 [language]
 label = "Sprache"
-en = "Englisch"
-de = "Deutsch"
+en = "English"
+de = "German"
 
 [app]
-title = "PlastMorph: Simulator fuer Plastikabbau"
+title = "PlastMorph: Simulation von Plastikabbau"
 caption = "Untersuche, wie Polymere sich unter verschiedenen Umweltbedingungen abbauen."
 
 [sidebar]
@@ -20,13 +20,13 @@ initial_mass_g = "Startmasse (g)"
 uv_exposure = "UV-Belastung"
 moisture = "Feuchtigkeit"
 oxygen = "Sauerstoff"
-microbial_activity = "Mikrobielle Aktivitaet"
+microbial_activity = "Mikrobielle Aktivität"
 mechanical_abrasion = "Mechanische Abnutzung"
 temperature_c = "Temperatur (C)"
 
 [plots]
-mass_over_time = "Masse ueber die Zeit"
-morphology_over_time = "Ikonografische Formveraenderung ueber die Zeit"
+mass_over_time = "Abbau über die Zeit"
+morphology_over_time = "Beispielhafte Formveraenderung über die Zeit"
 snapshot_title = "{years:.0f} {year_unit}\n{percent:.1f}% {mass_label}"
 
 [units]
@@ -43,8 +43,8 @@ PET = "Polyethylenterephthalat"
 PLA = "Polymilchsaeure"
 
 [environments]
-temperate_forest = "Gemaessigter Wald"
+temperate_forest = "Gemässigter Wald"
 landfill = "Deponie"
 ocean = "Ozean"
 organic_composting = "Organische Kompostierung"
-desert = "Wueste"
+desert = "Wüste"

@@ -40,7 +40,7 @@ def _flatten(data: dict, prefix: str = "") -> set[str]:
     return flat
 
 
-def t(key: str, language: str = DEFAULT_LANGUAGE, **kwargs: str | float) -> str:
+def translate(key: str, language: str = DEFAULT_LANGUAGE, **kwargs: str | float) -> str:
     """Translate a key with English fallback and optional formatting."""
     value = _lookup(_load_catalog(language), key)
     if value is None:

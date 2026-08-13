@@ -1,6 +1,6 @@
 """Tests for translation catalog completeness and fallback behavior."""
 
-from plastmorph.i18n import DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, missing_translation_keys, t
+from plastmorph.i18n import DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, missing_translation_keys, translate
 
 
 def test_default_language_is_english() -> None:
@@ -20,4 +20,4 @@ def test_all_supported_languages_cover_english_keys() -> None:
 
 def test_unknown_keys_are_marked_explicitly() -> None:
     """Unknown translation keys should be visible during development."""
-    assert t("missing.section.key", "de") == "[missing.section.key]"
+    assert translate("missing.section.key", "de") == "[missing.section.key]"
