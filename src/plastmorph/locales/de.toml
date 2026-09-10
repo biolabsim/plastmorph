@@ -26,7 +26,7 @@ temperature_c = "Temperatur (C)"
 
 [plots]
 mass_over_time = "Abbau über die Zeit"
-morphology_over_time = "Beispielhafte Formveraenderung über die Zeit"
+morphology_over_time = "Beispielhafte Formveränderung über die Zeit"
 snapshot_title = "{years:.0f} {year_unit}\n{percent:.1f}% {mass_label}"
 
 [units]
@@ -40,11 +40,12 @@ PU = "Polyurethan"
 PP = "Polypropylen"
 PS = "Polystyrol"
 PET = "Polyethylenterephthalat"
-PLA = "Polymilchsaeure"
+PLA = "Polymilchsäure"
 
 [environments]
-temperate_forest = "Gemässigter Wald"
+temperate_forest = "Wald"
 landfill = "Deponie"
 ocean = "Ozean"
-organic_composting = "Organische Kompostierung"
+organic_composting = "Kompostierung"
 desert = "Wüste"
+household = "Haushalt"
